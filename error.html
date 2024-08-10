@@ -1,0 +1,70 @@
+<!-- <?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: index.html");
+    exit();
+}
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('./0-blue-flat-style-employee-performance-appraisal-management-powerpoint-background_b02de7346d__960_540.avif') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+h1{
+    color: rgb(13, 173, 237);
+    font-size: 40PX;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    position: relative;
+    left: 55px;
+    bottom: 100px;
+}
+p{
+    color: rgb(0, 9, 13);
+    font-size: 30PX;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    right:300px;
+}
+#sub{
+    color: rgb(104, 85, 224);
+  background-color: rgba(255, 255, 255, 1);
+  color: white;
+  font-size: 20px;
+  height: 40px;
+	width:100px;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 100px;
+    right:800px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>FAILED</h1>
+    <P> ENTERED USER NAME OR PASSWORD ARE WRONG</P>
+    <input type="submit" value="BACK" class="btn btn-success" id="sub">
+    <script>
+        document.getElementById("sub").addEventListener("click", function(event) {
+            window.location.href = "index.html"; // Redirect to index.html
+        });
+    </script>
+</body>
+</html>

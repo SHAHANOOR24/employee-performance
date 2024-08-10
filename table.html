@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee List</title>
+	<style>
+		body{
+			 background: url('https://cdn.wallpapersafari.com/78/14/v48Lyq.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: white;
+    height: 100vh; /* Uncomment to apply */
+		}
+		table {
+			border-collapse: collapse;
+			width: 80%;
+		}
+		H1{
+			
+			color: #f0f0f0;
+		}
+		th, td {
+            font-size: larger;
+			border: 1px solid white;
+			padding: 10px;
+			text-align: left;
+		}
+		
+		th {
+			background-color: #f0f0f0;
+		}
+		
+		img {
+			width: 150px;
+			height: 150px;
+			border-radius: 0%;
+			margin: 10px;
+		}
+        a{
+            font-size: 30px;
+			color: white;
+        }
+    #login{
+    color: rgb(104, 85, 224);
+  background-color: rgba(255, 255, 255, 1);
+  color: white;
+  font-size: 20px;
+  height: 40px;
+	width:100px;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 500px;
+    left: 550px;
+        }
+	</style>
+</head>
+<body>
+	<h1>Employee List</h1>
+	<table>
+		<tr>
+			<th>Employee Image</th>
+			<th>Employee Name</th>
+		</tr>
+		<tr> 
+			<td><img src="https://designimages.appypie.com/displaypicture/displaypicture-14-person-human.jpg" alt="Employee 1"></td>
+			<td><a href="emp.php">JOHN</a></td>
+		</tr>
+		<tr>
+			<td><img src="https://c4.wallpaperflare.com/wallpaper/437/647/684/taylor-swift-beautiful-teen-vogue-wallpaper-thumb.jpg" alt="Employee 2"></td>
+			<td><a href="emp1.php">ANGEL</a></td>
+		</tr>
+		<button id="login">BACK</button>
+    <script>
+        document.getElementById("login").addEventListener("click", function(event) {
+            window.location.href = "first.html"; // Redirect to index.html
+        });
+    </script>
+	
+	</table>
+</body>
+</html>
